@@ -33,19 +33,22 @@ a {
 
 .container {
     max-width: 1170px;
-    width: 100%;
+    border: 1px solid red;
+    padding: 0 15px;
+
     margin: 0 auto;
+    margin-top: 10px;
 
 }
 
 /* header style 
 
+
  */
 
 header {
-
     margin-top: 15px;
-
+    height: 60px;
 
 }
 
@@ -53,101 +56,112 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 15px;
-
 }
 
 .logo_area {
     width: 120px;
-
 }
 
 .logo_area img {
     width: 100%;
 }
 
+#menu_toggler {
+    display: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: transparent;
+}
+
+#menu_toggler i {
+    color: black;
+    font-size: 35px;
+
+
+}
+
+
+
 .menu ul {
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
 .menu ul li {
     padding: 0 18px;
+
 }
 
 .menu ul li a {
-    font-size: 16px;
     line-height: 44px;
     color: #242f51;
+
     font-weight: 400;
     transition: 0.3s;
+
 }
 
 .menu ul li a:hover {
     color: red;
-
 }
 
-.trial_btn {
-
+#trial_btn {
     width: 170px;
     height: 57px;
     border-radius: 29px;
     background-color: #2500f9;
-    border: none;
-    outline: none;
-    cursor: pointer;
+
     line-height: 44px;
     color: #ffffff;
     font-weight: 700;
-
+    border: none;
+    outline: none;
 
 
 }
 
-
-/* Banner style  */
+/* banner style section  */
 #banner {
-    min-height: calc(100vh -72px);
+
+    margin-top: 10px;
+    /* display: none; */
+
+    min-height: calc(100vh - 75px);
     background-image: url('./images/hero_bg.png');
     background-repeat: no-repeat;
-    background-position: left bottom;
     background-size: cover;
+    background-position: left bottom 100px;
 
 }
 
 .inner_banner {
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    justify-content: space-around;
+
 
 }
 
-.content_area {}
+.banner_content_area {}
 
-.content_area h6 {
+.banner_content_area h6 {
+    display: flex;
+    align-items: center;
     font-size: 18px;
     line-height: 28px;
     color: #242f51;
     font-weight: 400;
-    width: 362px;
+    max-width: 362px;
     height: 35px;
-    border-radius: 17px;
+    border-radius: 18px;
     background-color: #e2eaed;
-    display: flex;
-    align-items: center;
-
-
-
-
-
 
 }
 
-.content_area h6 span {
-    padding-left: 12px;
-    padding-top: 2px;
-
+.banner_content_area i {
+    display: block;
     width: 39px;
     height: 35px;
     border-radius: 17px;
@@ -155,57 +169,55 @@ header {
     font-size: 18px;
     line-height: 28px;
     color: #ffffff;
-    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+
 
 }
 
-.content_area h1 {
-
-
+.banner_content_area h1 {
+    max-width: 550px;
     font-size: 60px;
     line-height: 75px;
     color: #242f51;
     font-weight: 600;
-    max-width: 525px;
-    margin: 36px 0;
+    margin-top: 25px;
+
 
 
 }
 
-.content_area p {
+.banner_content_area p {
+    margin: 40px 0;
     max-width: 490px;
     font-size: 18px;
     line-height: 28px;
     color: #616368;
     font-weight: 400;
-    margin-bottom: 30px;
+
 
 }
 
-.hero_btn_container {
-    display: flex;
-    align-items: center;
+.banner_btn_area {}
 
-}
-
-.demo_btn {
+#demo_btn {
 
     line-height: 44px;
     color: #2500f9;
     font-weight: 400;
     border: none;
     outline: none;
-    background-color: transparent;
-    cursor: pointer;
-    margin-left: 25px;
+    background-color: #f9fbfc;
+    margin-left: 20px;
+
 
 
 }
 
 .banner_area {
-    max-width: 360px;
-
-
+    max-width: 380px;
 }
 
 .banner_area img {
@@ -213,68 +225,69 @@ header {
 }
 
 
-/* client style  */
+/* client section  */
 
 #client {
-    margin: 100px 0;
+    margin-bottom: 100px;
 
 }
 
 #client h6 {
+
     text-align: center;
 
-    font-size: 16px;
     line-height: 28px;
     color: #242f51;
     font-weight: 400;
+    margin: 0 0 40px 0;
+
 }
 
 .inner_client {
+
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    justify-content: space-around;
 
 
 }
 
 .inner_client img {
-    width: 100px;
+    width: 120px;
     margin: 0 15px;
 
 
 }
 
 
-/* feature style start  */
-
+/* feature style  */
 #feature {
+
     background-image: url('./images/feature_bg.png');
     background-repeat: no-repeat;
     background-position: bottom right;
-    background-size: 40%;
+    background-size: contain;
 
 }
 
-.container h2 {
+#feature .container h2 {
     max-width: 330px;
     font-size: 36px;
     line-height: 46px;
     color: #242f51;
     font-weight: 600;
-    margin-bottom: 30px;
 
 
 }
 
-#feature p {
-    max-width: 400px;
-
+#feature .container p {
+    margin-top: 30px;
+    margin-bottom: 60px;
+    max-width: 300px;
 
     line-height: 26px;
     color: #616368;
-
     font-weight: 400;
-    margin-bottom: 60px;
 
 
 }
@@ -284,21 +297,19 @@ header {
     max-width: 640px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-
+    justify-items: center;
 
 }
 
 .feature_box {
-    width: 260px;
 
+
+    width: 280px;
 
 }
 
-.feature_box p {
-
-    line-height: 26px;
-    color: #616368;
-    font-weight: 400;
+.feature_box img {
+    width: 90px;
 }
 
 .feature_box h4 {
@@ -306,56 +317,14 @@ header {
     line-height: 58px;
     color: #242f51;
     font-weight: 600;
-
+    
+   
 }
 
-
-
-#app_feature {
-    background-image: url('/images/Home\ page\ \(2\).png');
-    background-repeat: no-repeat;
-    background-position: left bottom;
-    background-size: contain;
+.feature_box p {
+   
+    line-height: 26px;
+    color: #616368;
+    font-weight: 400;
+       
 }
-
-.inner_app_feature {
-    max-width: 460px;
-    /* margin-left: auto; */
-
-
-
-}
-
-.inner_app_feature h3 {}
-
-.inner_app_feature p {}
-
-.app_feature_box {}
-
-.app_feature_box {
-    display: flex;
-    margin: 20px 0;
-
-
-
-
-
-}
-
-.app_feature_box img {
-    width: 98px;
-
-}
-
-.app_feature_content h4 {
-    font-size: 20px;
-    line-height: 58px;
-    color: #f55767;
-    font-weight: 600;
-
-
-}
-
-.app_feature_content p {}
-
-.app_feature_box_container {}

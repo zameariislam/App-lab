@@ -7,73 +7,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>App Lab</title>
     <!-- font awesome  -->
-    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+
 
     <!-- google icons  -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
 </head>
 
 <body>
-    <!-- header start -->
+    <!-- header section start -->
     <header>
         <div class="container inner_header">
             <div class="logo_area">
-                <img src="./images/logo (1).png" alt="logo">
-
+                <img src="./images/logo (1).png" alt="Logo">
 
             </div>
+
+
             <nav class="menu">
+
                 <ul>
                     <li><a href="#"> Home </a></li>
-                    <li><a href="#"> Key Features</a></li>
-
+                    <li><a href="#"> Key Features </a></li>
                     <li><a href="#"> Pricing </a></li>
                     <li><a href="#"> Testiminial </a></li>
-                    <li><a href="#"> FAQ </a></li>
-
-                    <li> <button class="trial_btn">Try for free</button></li>
-
-
+                    <li><a href="#"> FAQ</a></li>
+                    <button id="trial_btn"> Try for free </button>
                 </ul>
-
-
             </nav>
+            <button id="menu_toggler">
+                <i class="fas fa-bars"></i>
+
+
+            </button>
+
+
 
 
         </div>
 
     </header>
-    <!-- header end  -->
 
+
+
+    <!-- header  section end  -->
+
+
+
+
+
+
+    <!-- banner section start  -->
 
     <section id="banner">
-        <div class="container inner_banner ">
-            <div class="content_area">
+        <div class="container inner_banner">
+            <div class="banner_content_area">
+                <h6> <i class="fa-regular fa-circle-check"></i>
+                    #1 Editiors Choice App of 2020</h6>
 
-                <h6> <span class="material-icons-outlined">
-                        check_circle
-                    </span> #1 Editiors Choice App of 2020</h6>
                 <h1>Best app for your
                     modern lifestyle</h1>
                 <p>Increase productivity with a simple to-do app. app for
                     managing your personal budgets.</p>
-                <div class="hero_btn_container">
-                    <button class="trial_btn">Try for free</button>
-                    <button class="demo_btn">Watch demo video</button>
-
+                <div class="banner_btn_area">
+                    <button id="trial_btn">Try for free</button>
+                    <button id="demo_btn">Watch demo video</button>
                 </div>
-
             </div>
             <div class="banner_area">
-                <img src="./images/hero_banner.png" alt="banner">
-
+                <img src="./images/hero_banner.png" alt="Banner">
             </div>
-
 
 
         </div>
+
 
 
     </section>
@@ -81,63 +92,61 @@
     <!-- banner section end  -->
 
     <!-- client section start  -->
+
     <section id="client">
         <h6>Trusted by companies like</h6>
-        <div class="container inner_client ">
+
+        <div class="inner_client container ">
 
             <img src="./images/client1.png" alt="">
             <img src="./images/client2.png" alt="">
             <img src="./images/client3.png" alt="">
             <img src="./images/client4.png" alt="">
             <img src="./images/client5.png" alt="">
-
-
         </div>
 
-
     </section>
-    <!-- client section end  -->
 
-    <!-- feature section start  -->
+    <!-- Feature section start  -->
 
-    <!-- <section id="feature">
-        <div class="container inner_app_feature ">
+    <section id="feature">
+        <div class="container ">
             <h2>Ultimate features
                 that we built</h2>
             <p>The rise of mobile devices transforms the way we
                 consume information entirely.</p>
             <div class="feature_box_container">
                 <div class="feature_box">
-                    <img src="./images/final_image.png" alt="feature">
+                    <img src="./images/final_image.png" alt="">
                     <h4>App Development</h4>
                     <p>Get your blood tests delivered at
                         home collect a sample from the
                         news your blood tests.</p>
-
                 </div>
                 <div class="feature_box">
-                    <img src="./images/final_image.png" alt="feature">
-                    <h4>App Development</h4>
+                    <img src="./images/final_image.png" alt="">
+                    <h4>UX Planing</h4>
                     <p>Get your blood tests delivered at
                         home collect a sample from the
                         news your blood tests.</p>
-
                 </div>
                 <div class="feature_box">
-                    <img src="./images/final_image.png" alt="feature">
+                    <img src="./images/final_image.png" alt="">
                     <h4>App Development</h4>
                     <p>Get your blood tests delivered at
                         home collect a sample from the
                         news your blood tests.</p>
-
                 </div>
                 <div class="feature_box">
-                    <img src="./images/final_image.png" alt="feature">
+                    <img src="./images/final_image.png" alt="">
                     <h4>App Development</h4>
                     <p>Get your blood tests delivered at
                         home collect a sample from the
                         news your blood tests.</p>
+                </div>
 
+                <div>
+                    <button id="trial_btn">See all</button>
                 </div>
 
             </div>
@@ -145,63 +154,6 @@
 
         </div>
 
-    </section> -->
-
-    <!-- feature section end  -->
-    <!-- app feature section start  -->
-
-    <section id="app_feature">
-        <div class="container inner_app_feature">
-            <h3>Awesome apps
-                features</h3>
-            <p>Increase productivity with a simple to-do app. app for
-                managing your personal budgets.</p>
-
-            <div class="app_feature_box_container">
-                <div class="app_feature_box">
-                    <img src="./images/watch.png" alt="">
-                    <div class="app_feature_content">
-                        <h4>Fast Performance</h4>
-                        <p>Get your blood tests delivered at
-                            home collect a sample from the
-                            news your blood tests.</p>
-                    </div>
-                </div>
-                <div class="app_feature_box">
-                    <img src="./images/watch.png" alt="">
-                    <div class="app_feature_content">
-                        <h4>Fast Performance</h4>
-                        <p>Get your blood tests delivered at
-                            home collect a sample from the
-                            news your blood tests.</p>
-                    </div>
-                </div>
-                <div class="app_feature_box">
-                    <img src="./images/watch.png" alt="">
-                    <div class="app_feature_content">
-                        <h4>Fast Performance</h4>
-                        <p>Get your blood tests delivered at
-                            home collect a sample from the
-                            news your blood tests.</p>
-                    </div>
-                </div>
-                <div class="app_feature_box">
-                    <img src="./images/watch.png" alt="">
-                    <div class="app_feature_content">
-                        <h4>Fast Performance</h4>
-                        <p>Get your blood tests delivered at
-                            home collect a sample from the
-                            news your blood tests.</p>
-                    </div>
-                </div>
-
-
-            </div>
-
-
-
-
-        </div>
 
 
     </section>
@@ -209,7 +161,19 @@
 
 
 
-    <!-- app feature section end  -->
+
+    <!-- Feature section end  -->
+
+
+
+
+
+
+    
+
+
+
+
 
 
 
